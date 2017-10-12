@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wp.nz.dao.EmpDao">
+
+   <!-- <select id="findAll" resultType="com.ssm.entity.Emp">
+        select * from emp order by id
+    </select>-->
+
+    <insert id="save" parameterType="com.wp.nz.entity.Emp">
+        insert into emp values(
+        emp_seq.nextval,
+        #{name,jdbcType=VARCHAR},
+        #{age,jdbcType=VARCHAR},
+        #{weight,jdbcType=VARCHAR}
+        )
+    </insert>
+
+
+    <!--<select id="findById" parameterType="java.lang.Integer" resultType="com.ssm.entity.Emp">
+        select * from t_emp where empno=#{id}
+    </select>-->
+
+
+    <!--<update id="update" parameterType="com.ssm.entity.Emp">
+        update t_emp set
+        ename = #{ename,jdbcType=VARCHAR},
+        job = #{job,jdbcType=VARCHAR},
+        sal = #{sal,jdbcType=NUMERIC}
+        where empno=#{empno,jdbcType=NUMERIC}
+    </update>-->
+
+
+
+    <!--<delete id="delete" parameterType="java.lang.Integer">
+        delete from t_emp where empno=#{id}
+    </delete>-->
+
+
+</mapper>

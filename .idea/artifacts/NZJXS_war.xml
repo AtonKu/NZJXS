@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="NZJXS:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="NZJXS.war">
+      <element id="artifact" artifact-name="NZJXS:war exploded" />
+    </root>
+  </artifact>
+</component>
